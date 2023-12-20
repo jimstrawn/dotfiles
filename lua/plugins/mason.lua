@@ -14,7 +14,6 @@ return {
 				"tsserver",
 				"html",
 				"cssls",
-				"terraformls",
 				"tflint",
 				"lua_ls",
 			},
