@@ -71,6 +71,9 @@ return {
 		lspconfig["jsonls"].setup({
 			capabilities = capabilities,
 			on_attach = on_attach,
+			init_options = {
+				provideFormatter = true,
+			},
 		})
 
 		lspconfig["cssls"].setup({
