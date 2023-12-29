@@ -11,3 +11,4 @@ link_it () {
 }
 
 link_it ".config/nvim"
+link_it ".config/kitty"
