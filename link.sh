@@ -10,5 +10,6 @@ link_it () {
   ln -vfFs "$SOURCE" "$TARGET"
 }
 
+link_it ".zshrc"
 link_it ".config/nvim"
 link_it ".config/kitty"
