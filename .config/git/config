@@ -1,0 +1,7 @@
+[core]
+	editor = nvim
+[user]
+	email = jdstrawn@gmail.com
+	name = Jim Strawn
+[init]
+	defaultBranch = main
