@@ -10,4 +10,5 @@ link_it () {
   ln -vfFs "$SOURCE" "$TARGET"
 }
 
+link_it ".zprofile"
 link_it ".config/git"
