@@ -13,3 +13,4 @@ link_it () {
 link_it ".zprofile"
 link_it ".zshrc"
 link_it ".config/git"
+link_it ".config/kitty"
