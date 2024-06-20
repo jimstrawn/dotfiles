@@ -1,0 +1,9 @@
+[user]
+	email = jdstrawn@gmail.com
+	name = jdstrawn
+[core]
+	editor = nvim
+[init]
+	defaultBranch = main
+[fetch]
+	prune = true
