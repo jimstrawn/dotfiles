@@ -11,9 +11,9 @@ vim.opt.expandtab = true
 vim.opt.smartindent = true
 
 vim.opt.undofile = true
-vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
-vim.opt.clipboard = "unnamedplus"
+
 vim.opt.hlsearch = true
+vim.opt.clipboard = "unnamedplus"
 
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
@@ -25,4 +25,9 @@ vim.opt.splitbelow = true
 
 vim.opt.inccommand = "split"
 
+vim.opt.cursorline = true
+
 vim.opt.scrolloff = 12
+
+-- Set highlight on search
+vim.opt.hlsearch = true
