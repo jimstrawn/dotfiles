@@ -6,3 +6,7 @@ if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
 fi
 
 eval "$(/opt/homebrew/bin/mise activate zsh)"
+
+if [ -f ~/.zshenv_aa ]; then
+    source ~/.zshenv_aa
+fi
