@@ -15,6 +15,16 @@
        name: neovim
        state: present
 
+   - name: Tap lazygit repository
+     community.general.homebrew_tap:
+       name: jesseduffield/lazygit
+       state: present
+
+   - name: Brew Install Lazygit
+     community.general.homebrew:
+       name: jesseduffield/lazygit/lazygit
+       state: present
+
    - name: Brew Install Fzf
      community.general.homebrew:
        name: fzf
