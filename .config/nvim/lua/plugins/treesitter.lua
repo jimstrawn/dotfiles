@@ -16,6 +16,7 @@ return {
 				"typescript",
 				"vim",
 				"vimdoc",
+				"regex",
 			},
 
 			highlight = { enable = true },
