@@ -1,4 +1,6 @@
 # personal aliases
+alias cd="z"
+alias lg="lazygit"
 alias cleanup='find . -type f -name "*.DS_Store" -ls -delete'
 
 if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
