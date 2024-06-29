@@ -55,6 +55,11 @@
        name: oh-my-posh
        state: present
 
+   - name: Brew Install zsh-autosuggestions
+     community.general.homebrew:
+       name: zsh-autosuggestions
+       state: present
+
    - name: Brew Install mise
      community.general.homebrew:
        name: mise
