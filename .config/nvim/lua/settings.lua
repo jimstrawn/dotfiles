@@ -11,6 +11,7 @@ vim.opt.expandtab = true
 vim.opt.smartindent = true
 
 vim.opt.undofile = true
+vim.opt.undodir = { "~/.local/state/nvim/.undo//" }
 
 vim.opt.hlsearch = true
 vim.opt.clipboard = "unnamedplus"
