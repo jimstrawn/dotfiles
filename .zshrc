@@ -10,7 +10,6 @@ fi
 eval "$(zoxide init zsh)"
 eval "$(/opt/homebrew/bin/mise activate zsh)"
 
-source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 if [ -f ~/.zshenv_aa ]; then
     source ~/.zshenv_aa
 fi
