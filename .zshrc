@@ -1,7 +1,8 @@
+
 # personal aliases
 alias cd="z"
-alias lg="lazygit"
 alias cleanup='find . -type f -name "*.DS_Store" -ls -delete'
+alias lg="lazygit"
 
 if [ "$TERM_PROGRAM" != "Apple_Terminal" ]; then
   eval "$(oh-my-posh init zsh)"

@@ -45,6 +45,11 @@
        name: zoxide
        state: present
 
+   - name: Brew Install stow
+     community.general.homebrew:
+       name: stow
+       state: present
+       
    - name: Brew Install tmux
      community.general.homebrew:
        name: tmux
