@@ -1,5 +1,7 @@
 
 # personal aliases
+alias ..="cd ../"
+alias ...="cd ../../"
 alias cd="z"
 alias cleanup='find . -type f -name "*.DS_Store" -ls -delete'
 alias lg="lazygit"
