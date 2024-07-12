@@ -1,0 +1,8 @@
+# ~/.config/tmuxinator/neovim-config.yml
+
+name: neovim-config
+root: ~/dotfiles/.config/nvim
+
+windows:
+  - editor: nvim
+  - lazygit: lg
