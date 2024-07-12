@@ -40,6 +40,11 @@
        name: fd
        state: present
 
+   - name: Brew Install wget
+     community.general.homebrew:
+       name: wget
+       state: present
+
    - name: Brew Install zoxide
      community.general.homebrew:
        name: zoxide
@@ -65,7 +70,7 @@
        name: oh-my-posh
        state: present
 
-   - name: Brew Install mise
+   - name: Brew nstall mise
      community.general.homebrew:
        name: mise
        state: present
