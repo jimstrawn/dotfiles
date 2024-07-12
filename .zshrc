@@ -1,3 +1,4 @@
+export EDITOR=nvim
 
 # personal aliases
 alias ..="cd ../"

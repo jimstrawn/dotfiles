@@ -55,6 +55,11 @@
        name: tmux
        state: present
        
+   - name: Brew Install tmuxinator
+     community.general.homebrew:
+       name: tmuxinator
+       state: present
+       
    - name: Brew Install oh-my-posh
      community.general.homebrew:
        name: oh-my-posh
