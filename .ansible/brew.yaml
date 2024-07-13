@@ -1,4 +1,12 @@
 ---
+- name: Brew Install zsh
+  community.general.homebrew:
+    name: zsh
+    state: present
+- name: Brew Install zsh-completions
+  community.general.homebrew:
+    name: zsh-completions
+    state: present
 - name: Brew Install Git
   community.general.homebrew:
     name: git
@@ -51,7 +59,7 @@
   community.general.homebrew:
     name: oh-my-posh
     state: present
-- name: Brew nstall mise
+- name: Brew Install mise
   community.general.homebrew:
     name: mise
     state: present
