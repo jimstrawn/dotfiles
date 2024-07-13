@@ -1,96 +1,12 @@
 ---
-
 - name: Installations
-  hosts: localhost 
+  hosts: localhost
   connection: local
-
   tasks:
-   - name: Brew Install Git
-     community.general.homebrew:
-       name: git
-       state: present
-
-   - name: Brew Install Neovim
-     community.general.homebrew:
-       name: neovim
-       state: present
-
-   - name: Tap lazygit repository
-     community.general.homebrew_tap:
-       name: jesseduffield/lazygit
-       state: present
-
-   - name: Brew Install Lazygit
-     community.general.homebrew:
-       name: jesseduffield/lazygit/lazygit
-       state: present
-
-   - name: Brew Install Fzf
-     community.general.homebrew:
-       name: fzf
-       state: present
-
-   - name: Brew Install Ripgrep
-     community.general.homebrew:
-       name: ripgrep
-       state: present
-
-   - name: Brew Install Fd
-     community.general.homebrew:
-       name: fd
-       state: present
-
-   - name: Brew Install wget
-     community.general.homebrew:
-       name: wget
-       state: present
-
-   - name: Brew Install zoxide
-     community.general.homebrew:
-       name: zoxide
-       state: present
-
-   - name: Brew Install stow
-     community.general.homebrew:
-       name: stow
-       state: present
-       
-   - name: Brew Install tmux
-     community.general.homebrew:
-       name: tmux
-       state: present
-       
-   - name: Brew Install tmuxinator
-     community.general.homebrew:
-       name: tmuxinator
-       state: present
-       
-   - name: Brew Install oh-my-posh
-     community.general.homebrew:
-       name: oh-my-posh
-       state: present
-
-   - name: Brew nstall mise
-     community.general.homebrew:
-       name: mise
-       state: present
-
-   - name: Brew Install Fire Code Nerd Font
-     community.general.homebrew_cask:
-       name: font-fira-code-nerd-font
-       state: present
-
-   - name: Brew Install Kitty
-     community.general.homebrew_cask:
-       name: kitty
-       state: present
-
-   - name: Brew Install Raycast
-     community.general.homebrew_cask:
-       name: raycast
-       state: present
-
-   - name: Brew Install 1Password
-     community.general.homebrew_cask:
-       name: 1password
-       state: present
+    - ansible.builtin.debug:
+        msg: Begin Brew Install
+    - name: Include Brew Install
+      ansible.builtin.include_tasks:
+        file: brew-install.yaml
+    - ansible.builtin.debug:
+        msg: End Brew Install
