@@ -24,6 +24,7 @@ return {
 				"ansiblels",
 				"lua_ls",
 				"tsserver",
+				"yamlls",
 			},
 		})
 
@@ -32,6 +33,7 @@ return {
 				"stylua",
 				"eslint_d",
 				"prettier",
+				"yamlfix",
 			},
 		})
 	end,

@@ -11,6 +11,7 @@ return {
 				typescript = { "prettier" },
 				javascriptreact = { "prettier" },
 				typescriptreact = { "prettier" },
+				yaml = { "yamlfix" },
 			},
 			format_on_save = {
 				lsp_fallback = true,
