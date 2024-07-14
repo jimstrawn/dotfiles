@@ -11,6 +11,10 @@
   community.general.homebrew:
     name: zsh-autosuggestions
     state: present
+- name: Brew Install zsh-syntax-highlighting
+  community.general.homebrew:
+    name: zsh-syntax-highlighting
+    state: present
 - name: Brew Install Git
   community.general.homebrew:
     name: git
