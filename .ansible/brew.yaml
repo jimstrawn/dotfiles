@@ -7,6 +7,10 @@
   community.general.homebrew:
     name: zsh-completions
     state: present
+- name: Brew Install zsh-autosuggestions
+  community.general.homebrew:
+    name: zsh-autosuggestions
+    state: present
 - name: Brew Install Git
   community.general.homebrew:
     name: git

@@ -23,3 +23,5 @@ if type brew &>/dev/null; then
     autoload -Uz compinit
     compinit
 fi
+
+source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
