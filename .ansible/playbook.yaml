@@ -10,10 +10,3 @@
         file: brew.yaml
     - ansible.builtin.debug:
         msg: End Brew Install
-    - ansible.builtin.debug:
-        msg: Begin Completions Install
-    - name: Include Brew Install
-      ansible.builtin.include_tasks:
-        file: completions.yaml
-    - ansible.builtin.debug:
-        msg: End Completions Install
