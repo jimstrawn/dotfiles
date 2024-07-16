@@ -1,6 +1,8 @@
 return {
 	"rcarriga/nvim-notify",
-	config = function()
-		require("notify").setup()
-	end,
+	opts = {
+		render = "minimal",
+		stages = "static",
+		top_down = false,
+	},
 }
