@@ -9,7 +9,6 @@ vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
 
 vim.opt.smartindent = true
-
 vim.opt.undofile = true
 
 vim.opt.hlsearch = true
@@ -29,5 +28,6 @@ vim.opt.cursorline = true
 
 vim.opt.scrolloff = 12
 
--- Set highlight on search
 vim.opt.hlsearch = true
+
+vim.opt.swapfile = false
