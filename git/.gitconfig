@@ -1,0 +1,15 @@
+# This is Git's per-user configuration file.
+[user]
+	name = jim
+	email = jdstrawn@gmail.com
+[pull]
+	rebase = true
+[init]
+	defaultBranch = main
+[push]
+	default = simple
+[core]
+	editor = nvim
+	autocrlf = input
+[color]
+	ui = auto
