@@ -1,6 +1,8 @@
 
 eval "$(zoxide init zsh)"
 
+eval "$(oh-my-posh init zsh --config ~/.config/poshthemes/jims.omp.toml)"
+
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 

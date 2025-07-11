@@ -1,0 +1,60 @@
+version = 3
+final_space = true
+
+[palette]
+background = "#181616"
+error = "#c4746e"
+foreground = "#c5c9c5"
+git-added = "#87a987"
+git-modified = "#c4b28a"
+git-staged = "#8ea4a2"
+info = "#8ba4b0"
+warning = "#b6927b"
+
+[[blocks]]
+type = "prompt"
+alignment = "left"
+
+[[blocks.segments]]
+type = "session"
+style = "plain"
+foreground = "#8ba4b0"
+template = "{{ .UserName }}@mfp"
+
+[blocks.segments.properties]
+display_host = false
+display_user = true
+
+[[blocks.segments]]
+type = "path"
+style = "plain"
+foreground = "#8ba4b0"
+
+[blocks.segments.properties]
+style = "folder"
+
+[[blocks.segments]]
+type = "git"
+style = "plain"
+foreground = "#c4b28a"
+template = " {{ .HEAD }}{{ if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if or .Working.Changed .Staging.Changed }} *{{ end }}{{ if .StashCount }} \uF01C{{ .StashCount }}{{ end }}"
+
+[blocks.segments.properties]
+branch_icon = "\uE725 "
+branch_identical_icon = "\u2261"
+branch_ahead_icon = "\u2191"
+branch_behind_icon = "\u2193"
+branch_gone_icon = "\u2262"
+commit_icon = "\uF417 "
+tag_icon = "\uF02B "
+rebase_icon = "\uE728 "
+cherry_pick_icon = "\uF794 "
+revert_icon = "\uF0E2 "
+merge_icon = "\uE727 "
+no_commits_icon = "\uF594 "
+display_stash_count = true
+display_status = true
+display_upstream_icon = true
+display_status_detail = true
+display_worktree_count = true
+fetch_status = true
