@@ -1,4 +1,6 @@
 
+autoload -Uz compinit && compinit
+
 eval "$(zoxide init zsh)"
 
 eval "$(oh-my-posh init zsh --config ~/.config/poshthemes/jims.omp.toml)"
