@@ -1,0 +1,32 @@
+font-family = GeistMono Nerd Font Mono
+font-family-bold = GeistMono Nerd Font Mono
+font-feature = liga
+font-size = 12
+
+mouse-hide-while-typing = true
+scrollback-limit = 20000
+
+theme = Kanagawa Dragon
+
+window-padding-x = 10
+window-padding-y = 10
+window-title-font-family = GeistMono Nerd Font Mono
+keybind = shift+enter=text:\n
+
+# Shell integration and performance
+shell-integration-features = cursor,sudo,title
+
+# macOS enhancements
+macos-titlebar-style = tabs
+macos-option-as-alt = true
+
+# Window behavior
+window-inherit-working-directory = true
+window-inherit-font-size = true
+
+# Clipboard settings
+clipboard-read = allow
+clipboard-write = allow
+copy-on-select = true
+
+# Advanced features
