@@ -19,7 +19,7 @@ alignment = "left"
 type = "session"
 style = "plain"
 foreground = "#8ba4b0"
-template = "{{ .UserName }}@mfp"
+template = "{{ .UserName }}@home"
 
 [blocks.segments.properties]
 display_host = false
