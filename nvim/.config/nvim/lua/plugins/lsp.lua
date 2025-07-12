@@ -99,6 +99,50 @@ return {
             capabilities = capabilities,
           })
         end,
+        ["ts_ls"] = function()
+          lspconfig["ts_ls"].setup({
+            capabilities = capabilities,
+            settings = {
+              typescript = {
+                inlayHints = {
+                  includeInlayParameterNameHints = "all",
+                  includeInlayParameterNameHintsWhenArgumentMatchesName = false,
+                  includeInlayFunctionParameterTypeHints = true,
+                  includeInlayVariableTypeHints = true,
+                  includeInlayVariableTypeHintsWhenTypeMatchesName = false,
+                  includeInlayPropertyDeclarationTypeHints = true,
+                  includeInlayFunctionLikeReturnTypeHints = true,
+                  includeInlayEnumMemberValueHints = true,
+                },
+              },
+              javascript = {
+                inlayHints = {
+                  includeInlayParameterNameHints = "all",
+                  includeInlayParameterNameHintsWhenArgumentMatchesName = false,
+                  includeInlayFunctionParameterTypeHints = true,
+                  includeInlayVariableTypeHints = true,
+                  includeInlayVariableTypeHintsWhenTypeMatchesName = false,
+                  includeInlayPropertyDeclarationTypeHints = true,
+                  includeInlayFunctionLikeReturnTypeHints = true,
+                  includeInlayEnumMemberValueHints = true,
+                },
+              },
+            },
+          })
+        end,
+        ["tailwindcss"] = function()
+          lspconfig["tailwindcss"].setup({
+            capabilities = capabilities,
+          })
+        end,
+        ["eslint"] = function()
+          lspconfig["eslint"].setup({
+            capabilities = capabilities,
+            settings = {
+              workingDirectories = { mode = "auto" },
+            },
+          })
+        end,
       }
     })
   end,

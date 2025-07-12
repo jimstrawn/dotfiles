@@ -9,6 +9,7 @@ return {
         "vimdoc",
         "javascript",
         "typescript",
+        "tsx",
         "python",
         "bash",
         "json",

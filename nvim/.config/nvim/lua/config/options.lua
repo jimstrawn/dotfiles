@@ -21,3 +21,11 @@ vim.opt.updatetime = 50
 
 -- Clipboard integration
 vim.opt.clipboard = "unnamedplus"
+
+-- File type detection for React
+vim.filetype.add({
+  extension = {
+    jsx = "javascriptreact",
+    tsx = "typescriptreact",
+  },
+})

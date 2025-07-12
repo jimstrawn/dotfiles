@@ -17,8 +17,11 @@ return {
 
     require("mason-lspconfig").setup({
       ensure_installed = {
-        "lua_ls",     -- Lua LSP
-        "marksman",   -- Markdown LSP
+        "lua_ls",        -- Lua LSP
+        "marksman",      -- Markdown LSP
+        "ts_ls",         -- TypeScript/JavaScript LSP
+        "tailwindcss",   -- Tailwind CSS LSP
+        "eslint",        -- ESLint LSP
       },
       automatic_installation = true,
     })
