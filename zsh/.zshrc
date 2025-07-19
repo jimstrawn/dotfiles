@@ -10,6 +10,8 @@ source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 
 export PATH="/Applications/IntelliJ IDEA.app/Contents/MacOS:$PATH"
 
+source ~/.config/spt-env.zsh
+
 # Aliases
 alias fcd='cd $(fd -t d | fzf)'
 alias fvim='nvim $(fzf)'
