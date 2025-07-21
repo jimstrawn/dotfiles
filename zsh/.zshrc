@@ -13,17 +13,20 @@ export PATH="/Applications/IntelliJ IDEA.app/Contents/MacOS:$PATH"
 source ~/.config/spt-env.zsh
 
 # Aliases
+alias cd='z'
+alias la='ls -la'
 alias fcd='cd $(fd -t d | fzf)'
 alias fvim='nvim $(fzf)'
 alias fkill='ps aux | fzf | awk "{print \$2}" | xargs kill'
 alias fbat='bat $(fzf)'
-
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="$HOME/.sdkman"
-[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 # The following lines have been added by Docker Desktop to enable Docker CLI completions.
 fpath=(/Users/jim/.docker/completions $fpath)
 autoload -Uz compinit
 compinit
 # End of Docker CLI completions
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
+
