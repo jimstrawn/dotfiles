@@ -10,6 +10,8 @@ vim.opt.smartindent = true
 
 -- Search
 vim.opt.ignorecase = true
+vim.opt.incsearch = true
+vim.opt.hlsearch = false
 vim.opt.smartcase = true
 
 -- Appearance
