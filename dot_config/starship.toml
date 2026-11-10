@@ -1,0 +1,71 @@
+
+"$schema" = "https://starship.rs/config-schema.json"
+
+add_newline = true
+
+format = """
+$directory\
+$git_branch\
+$git_status\
+$golang\
+$nodejs\
+$python\
+$rust\
+$cmd_duration\
+$line_break\
+$character"""
+
+palette = "catppuccin_latte"
+
+[palettes.catppuccin_latte]
+blue = "#1e66f5"
+green = "#40a02b"
+yellow = "#df8e1d"
+purple = "#8839ef"
+red = "#d20f39"
+gray = "#6c6f85"
+
+[directory]
+style = "bold blue"
+truncation_length = 3
+truncate_to_repo = false
+format = "[$path]($style) "
+
+[git_branch]
+symbol = " "
+style = "bold green"
+format = "[$symbol$branch]($style) "
+
+[git_status]
+style = "yellow"
+format = "([$all_status$ahead_behind]($style) )"
+
+[golang]
+symbol = "Go "
+style = "bold purple"
+format = "[$symbol$version]($style) "
+
+[nodejs]
+symbol = "Node "
+style = "bold green"
+format = "[$symbol$version]($style) "
+
+[python]
+symbol = "Python "
+style = "bold yellow"
+format = "[$symbol$version]($style) "
+
+[rust]
+symbol = "Rust "
+style = "bold red"
+format = "[$symbol$version]($style) "
+
+[cmd_duration]
+min_time = 2000
+style = "gray"
+format = "[$duration]($style) "
+
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"
+
