@@ -5,6 +5,7 @@ return {
       ensure_installed = {
         "gopls",
         "lua_ls",
+        "taplo",
       },
       automatic_enable = true,
     },
