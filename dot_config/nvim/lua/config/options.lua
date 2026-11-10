@@ -24,3 +24,6 @@ vim.opt.clipboard = "unnamedplus"
 
 -- Keep context around the cursor
 vim.opt.scrolloff = 8
+
+vim.opt.swapfile = false
+vim.opt.backup = false
