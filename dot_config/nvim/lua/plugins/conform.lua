@@ -46,7 +46,9 @@ return {
 		opts = {
 			formatters_by_ft = {
 				go = { lsp_format = "prefer" },
+				json = { "prettier" },
 				lua = { "stylua" },
+				markdown = { "prettier" },
 				toml = { "taplo" },
 			},
 

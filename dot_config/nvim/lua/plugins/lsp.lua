@@ -6,6 +6,8 @@ return {
 				"gopls",
 				"lua_ls",
 				"taplo",
+				"marksman",
+				"jsonls",
 			},
 			automatic_enable = true,
 		},
