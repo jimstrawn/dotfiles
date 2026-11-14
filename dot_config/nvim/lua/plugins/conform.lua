@@ -8,23 +8,17 @@ local function organize_go_imports(bufnr)
 		return
 	end
 
-	local params = vim.lsp.util.make_range_params()
-	params.context = {
-		only = { "source.organizeImports" },
-		diagnostics = {},
-	}
+	local client = clients[1]
+	local start = { line = 0, character = 0 }
+	local response = client:request_sync("textDocument/codeAction", {
+		textDocument = vim.lsp.util.make_text_document_params(bufnr),
+		range = { start = start, ["end"] = start },
+		context = { only = { "source.organizeImports" }, diagnostics = {} },
+	}, 2000, bufnr)
 
-	local results = vim.lsp.buf_request_sync(bufnr, "textDocument/codeAction", params, 2000)
-
-	for client_id, response in pairs(results or {}) do
-		local client = vim.lsp.get_client_by_id(client_id)
-
-		if client and client.name == "gopls" then
-			for _, action in ipairs(response.result or {}) do
-				if action.edit then
-					vim.lsp.util.apply_workspace_edit(action.edit, client.offset_encoding)
-				end
-			end
+	for _, action in ipairs(response and response.result or {}) do
+		if action.edit then
+			vim.lsp.util.apply_workspace_edit(action.edit, client.offset_encoding)
 		end
 	end
 end

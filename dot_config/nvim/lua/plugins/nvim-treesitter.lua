@@ -17,8 +17,10 @@ return {
 				"vim",
 				"vimdoc",
 			},
-			callback = function()
-				vim.treesitter.start()
+			callback = function(event)
+				if vim.treesitter.get_parser(event.buf) then
+					vim.treesitter.start(event.buf)
+				end
 			end,
 		})
 	end,
