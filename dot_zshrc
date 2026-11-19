@@ -1,2 +1,12 @@
-eval "$(starship init zsh)"
+fpath=("$(brew --prefix)/share/zsh-completions" $fpath)
+autoload -Uz compinit
+compinit
+
 eval "$(zoxide init zsh)"
+
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+eval "$(starship init zsh)"
+
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
